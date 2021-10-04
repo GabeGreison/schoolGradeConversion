@@ -38,4 +38,4 @@ if(scoreA){
 
 }
 
-console.log(`Nota ${getGrade(100)}`)
+console.log(`Nota ${getGrade(95)}`)
