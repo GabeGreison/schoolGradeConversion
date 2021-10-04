@@ -9,26 +9,22 @@ let scoreF = grade >= 0 && grade < 60
 let finalGrade;
 
 if(scoreA){
-    finalGrade = "A"
+    finalGrade = "Nota A"
 
  } else if (scoreB){
 
-    finalGrade = "B"
+    finalGrade = "Nota B"
 
  } else if (scoreC){
 
-    finalGrade = "C"
+    finalGrade = "Nota C"
 
  } else if(scoreD){
-    finalGrade = "D"
-
- } else if(scoreD){
-
-    finalGrade = "D"
+    finalGrade = "Nota D"
 
  } else if(scoreF){
 
-    finalGrade = "F"
+    finalGrade = "Nota F"
 
  } else (finalGrade = "Inválida")
 
@@ -38,4 +34,4 @@ if(scoreA){
 
 }
 
-console.log(`Nota ${getGrade(95)}`)
+console.log(getGrade(100))
