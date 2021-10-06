@@ -8,7 +8,36 @@
 </head>
 <body>
     <h1>Conversão de Notas Escolares</h1>
+
+<input type="text" list="nomes" placeholder="escolha um aluno" form="nomesDosAlunos">
+
+<datalist id="nomes">
+
+    <option >Aurora</option>
+    <option >Flora</option>
+    <option >Vênus</option>
+
+</datalist>
+
+<form action="" method="GET" id="nomesDosAlunos">
+
+    <button type="submit"> enviar </button>
+</form>
+
+<br>
+
+<fieldset form="digiteUmaNota">
+    <legend>Digite uma nota </legend>
+    <input type="number" placeholder="digite aqui" form="digiteUmaNota">
+    <button type="reset" form="digiteUmaNota">limpar</button>
+</fieldset>
+
+
+
+<form action="" method="GET" id="digiteUmaNota">
     
+</form>
+
     <script src="./SchoolGrades.js"></script>
 </body>
 </html>
