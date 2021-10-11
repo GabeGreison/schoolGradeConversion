@@ -7,9 +7,37 @@
     <title>School Grades</title>
 </head>
 <body>
+<header>
     <h1>Conversão de Notas Escolares</h1>
+</header>
+     
 
-<input type="text" list="nomes" placeholder="escolha um aluno" form="nomesDosAlunos">
+<main>
+    <fieldset style="width: 20px;">
+        <legend> <strong>Descubra sua nota</strong> </legend>
+
+        <label for="notas"> Escolha sua turma</label>
+        <select id="notas">
+            <option value="">Selecione uma turma</option>
+            <optgroup label="Manhã"></optgroup>
+            <option value="Turma a manha">a</option>
+            <option value="Turma b manha">b</option>
+            <option value="Turma c manha">c</option>
+            <optgroup label="Tarde"></optgroup>
+            <option value="Turma a tarde">a</option>
+            <option value="Turma b tarde">b</option>
+        </select>
+    
+
+<br>
+<br>
+
+<form action="" id="nomeDosAlunos">
+    <label for="escolha">Escolha um aluno</label>
+    <input id= "escolha" type="text" list="nomes" placeholder="escolha um aluno" form="nomesDosAlunos">
+    <button type="submmit" form="nomeDosAlunos">Enviar</button>
+</form>
+
 
 <datalist id="nomes">
 
@@ -19,25 +47,17 @@
 
 </datalist>
 
-<form action="" method="GET" id="nomesDosAlunos">
-
-    <button type="submit"> enviar </button>
-</form>
-
 <br>
 
-<fieldset form="digiteUmaNota">
+<form action="" method="GET" id="digiteUmaNota">
     <legend>Digite uma nota </legend>
     <input type="number" placeholder="digite aqui" form="digiteUmaNota">
-    <button type="reset" form="digiteUmaNota">limpar</button>
-</fieldset>
-
-
-
-<form action="" method="GET" id="digiteUmaNota">
+    <button type="reset" form="digiteUmaNota">Limpar</button>
     
 </form>
+    </fieldset>
 
-    <script src="./SchoolGrades.js"></script>
+</main>
+<script src="./SchoolGrades.js"></script>
 </body>
 </html>
