@@ -8,56 +8,60 @@
 </head>
 <body>
 <header>
-    <h1>Conversão de Notas Escolares</h1>
+    <h1 class="blogTitle">Conversão de Notas Escolares</h1>
 </header>
      
 
 <main>
     <fieldset style="width: 20px;">
-        <legend> <strong>Descubra sua nota</strong> </legend>
-
-        <label for="notas"> Escolha sua turma</label>
-        <select id="notas">
-            <option value="">Selecione uma turma</option>
-            <optgroup label="Manhã"></optgroup>
-            <option value="Turma a manha">a</option>
-            <option value="Turma b manha">b</option>
-            <option value="Turma c manha">c</option>
-            <optgroup label="Tarde"></optgroup>
-            <option value="Turma a tarde">a</option>
-            <option value="Turma b tarde">b</option>
-        </select>
-    
+    <legend> <strong>Descubra sua nota</strong> </legend>
+        
+        <label for="notas1"> Escolha sua turma</label>
+            <select id="notas1">
+                <option value="">Selecione uma turma</option>
+                <optgroup label="Manhã"></optgroup>
+                <option value="Turma a manha">Manhã A</option>
+                <option value="Turma b manha">Manhã B</option>
+                <option value="Turma c manha">Manhã C</option>
+                <optgroup label="Tarde"></optgroup>
+                <option value="Turma a tarde">Tarde A</option>
+                <option value="Turma b tarde">Turma B</option>
+            </select>
+       
 
 <br>
 <br>
 
-<form action="" id="nomeDosAlunos">
+
     <label for="escolha">Escolha um aluno</label>
-    <input id= "escolha" type="text" list="nomes" placeholder="escolha um aluno" form="nomesDosAlunos">
-    <button type="submmit" form="nomeDosAlunos">Enviar</button>
-</form>
+    <input id= "escolha" type="text" list="nomes" placeholder="Escolha um aluno" form="notasFinais">
 
 
 <datalist id="nomes">
-
     <option >Aurora</option>
     <option >Flora</option>
     <option >Vênus</option>
-
+    <option >Jorge</option>
+    <option >Antonio</option>
+    <option >Luís</option>
 </datalist>
 
 <br>
+<br>
 
-<form action="" method="GET" id="digiteUmaNota">
-    <legend>Digite uma nota </legend>
-    <input type="number" placeholder="digite aqui" form="digiteUmaNota">
-    <button type="reset" form="digiteUmaNota">Limpar</button>
-    
-</form>
+    <label for="nota2">Digite uma nota </label>
+    <input type="number" placeholder="Digite sua nota" form="notasFinais" id="notas2">
+
+    <form action="" method="get" id="notasFinais"></form>
+
+    <br>
+
+    <button form="notasFinais" type="submit">Ver nota</button>
+
     </fieldset>
 
 </main>
+
 <script src="./SchoolGrades.js"></script>
 </body>
 </html>
