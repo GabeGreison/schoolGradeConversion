@@ -1,0 +1,42 @@
+*{
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  html{
+    background-color: rgb(236, 233, 233);
+    
+  }
+  
+  .blogTitle{
+      font-style: oblique;
+      font-weight: lighter;
+    color: rgb(31, 21, 21);
+    border-bottom: 1px solid rgb(179, 33, 33);
+    width: 40%;
+    padding: 2px 0 0 0;
+    margin: 20px;
+  }
+  
+  main > fieldset {
+      font-weight: normal;
+    width: 40%;
+    height: fit-content;
+    padding: 5px 15px 15px 15px;
+    background-color: rgb(255, 205, 248);
+    border: groove rgb(230, 129, 129) 3px ;
+    color: black;
+    margin-left: 20px;
+    
+  }
+  #notas1,#escolha{
+    margin: 0 0 5% 40% ;
+    
+    }
+    #notas2{
+margin: 0 0 5% 42%;
+    }
+    .subTitulo{
+        font-size: 20px;
+        font-weight: normal;
+        font-style: oblique;
+    }
